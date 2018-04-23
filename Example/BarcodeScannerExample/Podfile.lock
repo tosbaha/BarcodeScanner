@@ -1,16 +1,16 @@
 PODS:
-  - BarcodeScanner (4.1.1)
+  - BarcodeScanner (4.1.3)
 
 DEPENDENCIES:
   - BarcodeScanner (from `../../`)
 
 EXTERNAL SOURCES:
   BarcodeScanner:
-    :path: ../../
+    :path: "../../"
 
 SPEC CHECKSUMS:
-  BarcodeScanner: e4b51b1c1c398bbf649e02da0d62c8c7a7de4c4f
+  BarcodeScanner: ae29e5c81c6009e95f4d0bc4879921e6f5ed5aeb
 
 PODFILE CHECKSUM: ea40d735f047f0ae7ae319d7a320a82facf3361f
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.5.0
