@@ -37,7 +37,7 @@ func localizedString(_ key: String) -> String {
 
 /// Checks if the app is running in Simulator.
 var isSimulatorRunning: Bool = {
-  #if targetEnvironment(simulator)
+  #if (arch(i386) || arch(x86_64)) && os(iOS)
     return true
   #else
     return false
