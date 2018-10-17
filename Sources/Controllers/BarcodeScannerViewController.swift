@@ -134,7 +134,6 @@ open class BarcodeScannerViewController: UIViewController {
       resetState()
     }
 
-
     UIView.animate(
       withDuration: duration,
       animations: ({
@@ -170,7 +169,7 @@ open class BarcodeScannerViewController: UIViewController {
     flashView.alpha = 1
 
     view.addSubview(flashView)
-    view.bringSubview(toFront: flashView)
+    view.bringSubviewToFront(flashView)
 
     UIView.animate(
       withDuration: 0.2,
@@ -230,7 +229,7 @@ extension BarcodeScannerViewController: CameraViewControllerDelegate {
 
   func cameraViewControllerDidTapSettingsButton(_ controller: CameraViewController) {
     DispatchQueue.main.async {
-      if let settingsURL = URL(string: UIApplicationOpenSettingsURLString) {
+        if let settingsURL = URL(string: UIApplication.openSettingsURLString) {
         UIApplication.shared.openURL(settingsURL)
       }
     }
