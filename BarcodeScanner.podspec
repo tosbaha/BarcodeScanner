@@ -1,7 +1,8 @@
 Pod::Spec.new do |s|
   s.name             = "BarcodeScanner"
   s.summary          = "Simple and beautiful barcode scanner."
-  s.version          = "4.1.3"
+  s.version          = "4.1.4"
+  s.swift_versions = ['5.0', '5.1']
   s.homepage         = "https://github.com/hyperoslo/BarcodeScanner"
   s.license          = 'MIT'
   s.author           = { "Hyper Interaktiv AS" => "ios@hyper.no" }
@@ -21,6 +22,4 @@ Pod::Spec.new do |s|
   }
 
   s.frameworks = 'UIKit', 'AVFoundation'
-
-  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.0' }
 end
